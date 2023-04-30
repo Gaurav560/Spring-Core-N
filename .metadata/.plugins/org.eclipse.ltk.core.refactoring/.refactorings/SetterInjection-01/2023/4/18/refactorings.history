@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.ineuron.component&apos; to &apos;SetterInjection-01/src/in.ineuron.component&apos;&#x0D;&#x0A;- Original project: &apos;SetterInjection-01&apos;&#x0D;&#x0A;- Destination element: &apos;SetterInjection-01/src/in.ineuron.component&apos;&#x0D;&#x0A;- Original element: &apos;SetterInjection-01/src/in.ineuron.component&apos;" description="Copy package" destination="/src&lt;in.ineuron.component" element1="/src&lt;in.ineuron.component" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1682851313602" version="1.0"/>
+</session>

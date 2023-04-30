@@ -1,0 +1,10 @@
+package in.ineuron.component;
+
+import java.util.Date;
+
+//Target Class(user defined class)
+public class WishMessageGenerator {
+
+	//predefined class(dependent class)also called helper class .
+	private Date date;
+}
