@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- configuration for the dependent component -->
+	<bean id="dt1" class="java.util.Date">
+	</bean>
+
+	<!--u can't have same id for bean as in cache it stores in a key value pair 
+		inside a map and key must be unique -->
+	<!-- configuration for the dependent component -->
+	<bean id="dt2" class="java.util.Date">
+		<property name="year" value="93" />
+		<property name="month" value="0" />
+		<property name="date" value="03" />
+	</bean>
+
+	<!-- configuration for the Target component -->
+	<bean id="wmg" class="in.ineuron.component.WishMessageGenerator">
+<property name="date" ref="dt2"/>
+<constructor-arg name="date" ref="dt1"/>
+	</bean>
+
+	<!-- more bean definitions go here -->
+
+</beans>

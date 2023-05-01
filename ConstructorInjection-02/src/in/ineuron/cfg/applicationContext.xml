@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- configuration for the dependent component -->
+	<bean id="dt" class="java.util.Date">
+	</bean>
+
+	<!-- configuration for the Target component -->
+	<bean id="wmg" class="in.ineuron.component.WishMessageGenerator">
+
+
+		<!-- for telling container to inject through constructor injection ,we 
+			use object type -->
+			
+			<!--name value should be whatever your parameter name--> 
+			<constructor-arg name="date" ref="dt"/>
+
+	</bean>
+
+	<!-- more bean definitions go here -->
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- configuration for the dependent component -->
+	<bean id="dt" class="java.util.Date">
+	</bean>
+
+	<!-- configuration for the Target component -->
+	<bean id="wmg" class="in.ineuron.component.WishMessageGenerator">
+
+
+		<!-- for telling container to inject through setter method ,we use object 
+			type -->
+		<!--in the property tag name value is not a bean property name ,it is the 
+			word of setxxxx method and the letter of first method is small -->
+		<property name="date" ref="dt" />
+	</bean>
+
+	<!-- more bean definitions go here -->
+
+</beans>
