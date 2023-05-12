@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="Student" class="in.ineuron.component.Student">
+
+
+<!--  this will work properly as everything is done position wise  
+but if there is a mismatch in any of the position ,
+then it will result in an Exception called Unsatisfied Dependency Exception -->
+
+
+<constructor-arg name="sno" type="java.lang.Integer" index="0" value="18"/>
+<constructor-arg name="sname" type="java.lang.String" index="1"  value="VK"/>
+<constructor-arg name="saddr" type="java.lang.String" index="2"  value="RCB"/>
+<constructor-arg name="avg"  type="java.lang.Float" index="3"  value="60.3F"/>
+
+
+</bean>
+
+
+
+</beans>
