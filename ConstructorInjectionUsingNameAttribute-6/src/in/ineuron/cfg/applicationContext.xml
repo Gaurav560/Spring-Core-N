@@ -6,10 +6,10 @@
 
 <bean id="Student" class="in.ineuron.component.Student">
 
-<constructor-arg name="sno" value="10"/>
-<constructor-arg name="sname"  value="Sachin"/>
-<constructor-arg name="saddr" value="MI"/>
-<constructor-arg name="avg"  value="55.5F"/>
+<constructor-arg name="sno" value="7"/>
+<constructor-arg name="sname"  value="msd"/>
+<constructor-arg name="saddr" value="csk"/>
+<constructor-arg name="avg"  value="55.8F"/>
 
 
 </bean>
