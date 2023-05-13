@@ -1,11 +1,7 @@
 package in.ineuron.test;
 
-
-
-
-import java.io.IOException;
-
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
 
